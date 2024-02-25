@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85842c70-9acc-4f2b-8c94-eb15069e85a6" name="Changes" comment="프로젝트 생성">
-      <change afterPath="$PROJECT_DIR$/src/CommentJava.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HelloJava2.java" afterDir="false" />
+    <list default="true" id="85842c70-9acc-4f2b-8c94-eb15069e85a6" name="Changes" comment="자바 애플리케이션 실행">
+      <change afterPath="$PROJECT_DIR$/src/variable/Var1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/variable/Var2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/variable/Var3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/variable/Var4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/variable/Var5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/variable/Var6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/variable/Var7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/variable/Var8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/variable/ex/VarEx1Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/variable/ex/VarEx2Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/variable/ex/VarEx3Question.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HelloJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HelloJava.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +49,16 @@
     "Application.HelloJava.executor": "Run",
     "Application.HelloJava2.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.Var1.executor": "Run",
+    "Application.Var2.executor": "Run",
+    "Application.Var3.executor": "Run",
+    "Application.Var5.executor": "Run",
+    "Application.Var6.executor": "Run",
+    "Application.Var7.executor": "Run",
+    "Application.Var8.executor": "Run",
+    "Application.VarEx1Question.executor": "Run",
+    "Application.VarEx2Question.executor": "Run",
+    "Application.VarEx3Question.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -56,41 +74,79 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.HelloJava2">
-    <configuration name="CommentJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CommentJava" />
+  <component name="RunManager" selected="Application.VarEx3Question">
+    <configuration name="Var7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="variable.Var7" />
       <module name="java-start" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="variable.ex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HelloJava" />
+    <configuration name="Var8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="variable.Var8" />
       <module name="java-start" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="variable.ex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloJava2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HelloJava2" />
+    <configuration name="VarEx1Question" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="variable.ex.VarEx1Question" />
       <module name="java-start" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="variable.ex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="VarEx2Question" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="variable.ex.VarEx2Question" />
       <module name="java-start" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="variable.ex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VarEx3Question" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="variable.ex.VarEx3Question" />
+      <module name="java-start" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="variable.ex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloJava2" />
-        <item itemvalue="Application.CommentJava" />
-        <item itemvalue="Application.HelloJava" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.VarEx3Question" />
+        <item itemvalue="Application.VarEx2Question" />
+        <item itemvalue="Application.VarEx1Question" />
+        <item itemvalue="Application.Var8" />
+        <item itemvalue="Application.Var7" />
       </list>
     </recent_temporary>
   </component>
@@ -110,7 +166,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708652488596</updated>
       <workItem from="1708652490167" duration="1002000" />
-      <workItem from="1708856281894" duration="1656000" />
+      <workItem from="1708856281894" duration="6846000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 생성">
       <option name="closed" value="true" />
@@ -120,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708856629923</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="자바 애플리케이션 실행">
+      <option name="closed" value="true" />
+      <created>1708858223026</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708858223026</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +203,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="프로젝트 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="프로젝트 생성" />
+    <MESSAGE value="자바 애플리케이션 실행" />
+    <option name="LAST_COMMIT_MESSAGE" value="자바 애플리케이션 실행" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
