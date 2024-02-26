@@ -17,5 +17,9 @@ public class If6 {
         }
 
         System.out.println("총 할인 금액 : " + discount + "원");
+
+        if (true) {
+            System.out.println("if문에서 실행됨");
+        }
     }
 }
