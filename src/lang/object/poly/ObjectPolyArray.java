@@ -3,12 +3,8 @@ package lang.object.poly;
 public class ObjectPolyArray {
 
   public static void main(String[] args) {
-    Dog dog = new Dog();
-    Car car = new Car();
-    Object object = new Object();
 
-    Object[] objects = {dog, car, object};
-    
+    Object[] objects = {new Dog(), new Car(), new Object()};
     size(objects);
   }
 

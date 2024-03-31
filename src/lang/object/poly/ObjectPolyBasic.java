@@ -6,14 +6,14 @@ public class ObjectPolyBasic {
     Dog dog = new Dog();
     Car car = new Car();
 
-    actioin(dog);
-    actioin(car);
+    action(dog);
+    action(car);
   }
 
-  private static void actioin(Object object) {
+  private static void action(Object object) {
 
     // 객체에 맞게 다운캐스팅
-    if (object instanceof  Dog dog) {
+    if (object instanceof Dog dog) {
       dog.sound();
     } else if (object instanceof Car car) {
       car.move();

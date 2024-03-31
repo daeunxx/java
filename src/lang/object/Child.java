@@ -2,7 +2,7 @@ package lang.object;
 
 public class Child extends Parent {
 
-  public void ChildMethod() {
+  public void childMethod() {
     System.out.println("Child.ChildMethod");
   }
 }
