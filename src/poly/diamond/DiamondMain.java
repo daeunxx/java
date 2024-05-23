@@ -10,5 +10,10 @@ public class DiamondMain {
     InterfaceB b = new Child();
     b.methodB();
     b.methodCommon();
+
+    Child child = new Child();
+    child.methodA();
+    child.methodB();
+    child.methodCommon();
   }
 }
