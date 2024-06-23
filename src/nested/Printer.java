@@ -1,4 +1,4 @@
-package nested.local;
+package nested;
 
 public interface Printer {
 

@@ -1,6 +1,7 @@
 package nested.local;
 
 import java.lang.reflect.Field;
+import nested.Printer;
 
 public class LocalOuterV3 {
 

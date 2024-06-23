@@ -1,15 +1,15 @@
-package nested.local;
+package nested.anonymous;
 
 import nested.Printer;
 
-public class LocalOuterV2 {
+public class AnonymousOuter {
 
   private int outInstanceValue = 3;
 
   public void process(int paramValue) {
     int localValue = 1;
 
-    class LocalPrinter implements Printer {
+    Printer printer = new Printer() {
 
       int value = 0;
 
@@ -20,14 +20,14 @@ public class LocalOuterV2 {
         System.out.println("paramValue = " + paramValue);
         System.out.println("outInstanceValue = " + outInstanceValue);
       }
-    }
+    };
 
-    LocalPrinter printer = new LocalPrinter();
     printer.print();
+    System.out.println("printer.getClass() = " + printer.getClass());
   }
 
   public static void main(String[] args) {
-    LocalOuterV2 localOuter = new LocalOuterV2();
-    localOuter.process(2);
+    AnonymousOuter main = new AnonymousOuter();
+    main.process(2);
   }
 }
