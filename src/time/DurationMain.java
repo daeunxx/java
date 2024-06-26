@@ -19,6 +19,7 @@ public class DurationMain {
     LocalTime endTime = LocalTime.of(10, 0);
     Duration between = Duration.between(startTime, endTime);
     System.out.println("차이: " + between.getSeconds() + "초");
+    System.out.println("차이: " + between.toMinutes() + "분");
     System.out.println("근무 시간: " + between.toHours() + "시간 " + between.toMinutesPart() + "분");
   }
 }

@@ -12,9 +12,11 @@ public class ChronoUnitMain {
       System.out.println("value = " + value);
     }
     System.out.println("HOURS = " + ChronoUnit.HOURS);
-    System.out.println("HOURS.duration = " + ChronoUnit.HOURS.getDuration().getSeconds());
+    System.out.println("HOURS.duration = " + ChronoUnit.HOURS.getDuration());
+    System.out.println("HOURS.duration.getSeconds() = " + ChronoUnit.HOURS.getDuration().getSeconds());
     System.out.println("DAYS = " + ChronoUnit.DAYS);
-    System.out.println("DAYS.duration = " + ChronoUnit.DAYS.getDuration().getSeconds());
+    System.out.println("DAYS.duration = " + ChronoUnit.DAYS.getDuration());
+    System.out.println("DAYS.duration.getSeconds() = " + ChronoUnit.DAYS.getDuration().getSeconds());
 
     //차이 구하기
     LocalTime lt1 = LocalTime.of(1, 10, 30);

@@ -1,6 +1,7 @@
 package time;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.time.Period;
 
 public class PeriodMain {
@@ -13,6 +14,13 @@ public class PeriodMain {
     LocalDate plusDate = currentDate.plus(period);
     System.out.println("currentDate = " + currentDate);
     System.out.println("plusDate = " + plusDate);
+
+ /*
+    LocalTime currentTime = LocalTime.now();
+    LocalTime plusTime = currentTime.plus(period); //UnsupportedTemporalTypeException
+    System.out.println("currentTime = " + currentTime);
+    System.out.println("plusTime = " + plusTime);
+*/
 
     //기간 차이
     LocalDate startDate = LocalDate.of(2024, 1, 1);

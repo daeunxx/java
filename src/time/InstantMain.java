@@ -1,6 +1,7 @@
 package time;
 
 import java.time.Instant;
+import java.time.ZoneId;
 import java.time.ZonedDateTime;
 
 public class InstantMain {
@@ -10,7 +11,7 @@ public class InstantMain {
     Instant now = Instant.now(); //UTC 기준
     System.out.println("now = " + now);
 
-    ZonedDateTime zdt = ZonedDateTime.now();
+    ZonedDateTime zdt = ZonedDateTime.of(2023, 1, 1, 10, 0, 0, 0, ZoneId.of("Asia/Seoul"));
     Instant from = Instant.from(zdt);
     System.out.println("zdt = " + zdt);
     System.out.println("from = " + from);
