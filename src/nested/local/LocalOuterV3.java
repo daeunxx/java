@@ -28,6 +28,7 @@ public class LocalOuterV3 {
     }
 
     LocalPrinter printer = new LocalPrinter();
+    printer.value = 100;
     return printer;
   }
 
