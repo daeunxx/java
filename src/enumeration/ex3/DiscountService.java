@@ -7,6 +7,7 @@ public class DiscountService {
   public int discount(Grade grade, int price) {
     int discountPercent = 0;
 
+    //enum switch 변경 가능
     if (grade == BASIC) {
       discountPercent = 10;
     } else if (grade == GOLD) {

@@ -1,17 +1,19 @@
 package enumeration.ex3;
 
-import static enumeration.ex3.Grade.*;
-
 public class EnumRefMain {
 
   public static void main(String[] args) {
-    System.out.println("class BASIC = " + BASIC.getClass());
-    System.out.println("class GOLD = " + GOLD.getClass());
-    System.out.println("class DIAMOND = " + DIAMOND.getClass());
+    System.out.println("class BASIC = " + Grade.BASIC.getClass());
+    System.out.println("class GOLD = " + Grade.GOLD.getClass());
+    System.out.println("class DIAMOND = " + Grade.DIAMOND.getClass());
 
-    System.out.println("ref BASIC = " + refValue(BASIC));
-    System.out.println("ref GOLD = " + refValue(GOLD));
-    System.out.println("ref DIAMOND = " + refValue(DIAMOND));
+    System.out.println("ref BASIC = " + refValue(Grade.BASIC));
+    System.out.println("ref GOLD = " + refValue(Grade.GOLD));
+    System.out.println("ref DIAMOND = " + refValue(Grade.DIAMOND));
+
+    System.out.println("BASIC = " + Grade.BASIC);
+    System.out.println("GOLD = " + Grade.GOLD);
+    System.out.println("DIAMOND = " + Grade.DIAMOND);
   }
 
   private static String refValue(Grade grade) {

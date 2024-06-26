@@ -1,8 +1,5 @@
 package enumeration.ref1;
 
-import enumeration.ex2.ClassGrade;
-import enumeration.ex2.DiscountService;
-
 public class ClassGradeRefMain1 {
 
   public static void main(String[] args) {

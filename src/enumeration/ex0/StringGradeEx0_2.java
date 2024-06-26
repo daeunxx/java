@@ -9,7 +9,7 @@ public class StringGradeEx0_2 {
 
     //존재하지 않는 등급
     int vip = discountService.discount("VIP", price);
-    System.out.println("BASIC 등급의 할인 금액: " + vip);
+    System.out.println("VIP 등급의 할인 금액: " + vip);
 
     //오타
     int diamodd = discountService.discount("DIAMODD", price);
