@@ -21,7 +21,7 @@ public class AnimalHospitalMainV1 {
     //문제1: 개 병원에 고양이 전달
     dogHospital.setAnimal(cat); //매개변수 체크 실패: 컴파일 오류 발생X
 
-    //문제2: 개 타입 반환
+    //문제2: 개 타입 반환, 캐스팅 필요
     Dog biggerDog = (Dog) dogHospital.bigger(new Dog("멍멍이2", 200));
     System.out.println("biggerDog = " + biggerDog);
   }

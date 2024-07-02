@@ -13,11 +13,11 @@ public class MethodMain2 {
     AnimalMethod.checkup(dog);
     AnimalMethod.checkup(cat);
 
-    Dog targetDob = new Dog("큰 멍멍이", 200);
-    Dog biggerDog = AnimalMethod.bigger(dog, targetDob);
+    Dog targetDog = new Dog("큰 멍멍이", 200);
+    Dog biggerDog = AnimalMethod.bigger(dog, targetDog);
     System.out.println("biggerDog = " + biggerDog);
 
-    Animal biggerAnimal = AnimalMethod.bigger(targetDob, cat);
+    Animal biggerAnimal = AnimalMethod.bigger(targetDog, cat);
     System.out.println("biggerAnimal = " + biggerAnimal);
   }
 }
