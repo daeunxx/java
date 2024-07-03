@@ -19,7 +19,7 @@ public class WildCardEx {
 
   static void printWildCardV2(Box<? extends Animal> box) {
     Animal animal = box.getValue();
-    System.out.println("이름 " + animal.getName());
+    System.out.println("이름 = " + animal.getName());
   }
 
   static <T extends Animal> T printAndReturnGeneric(Box<T> box) {
