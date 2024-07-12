@@ -3,19 +3,19 @@ package collection.set;
 import java.util.Arrays;
 import java.util.LinkedList;
 
-public class MyHashSetV1 {
+public class MyHashSetV2 {
 
   static final int DEFAULT_INITIAL_CAPACITY = 16;
-  private LinkedList<Integer>[] buckets;
+  private LinkedList<Object>[] buckets;
 
   private int size = 0;
   private int capacity = DEFAULT_INITIAL_CAPACITY;
 
-  public MyHashSetV1() {
+  public MyHashSetV2() {
     initBuckets();
   }
 
-  public MyHashSetV1(int capacity) {
+  public MyHashSetV2(int capacity) {
     this.capacity = capacity;
     initBuckets();
   }
@@ -27,12 +27,12 @@ public class MyHashSetV1 {
     }
   }
 
-  private int hashIndex(int value) {
-    return value % capacity;
+  private int hashIndex(Object value) {
+    return Math.abs(value.hashCode()) % capacity;
   }
 
-  public boolean add(int value) {
-    LinkedList<Integer> bucket = buckets[hashIndex(value)];
+  public boolean add(Object value) {
+    LinkedList<Object> bucket = buckets[hashIndex(value)];
     if (bucket.contains(value)) {
       return false;
     }
@@ -41,14 +41,14 @@ public class MyHashSetV1 {
     return true;
   }
 
-  public boolean contains(int searchValue) {
-    LinkedList<Integer> bucket = buckets[hashIndex(searchValue)];
-    return bucket.contains(searchValue);
+  public boolean contains(Object searchValue) {
+    LinkedList<Object> bucket = buckets[hashIndex(searchValue)]; //O(1)
+    return bucket.contains(searchValue); //O(n) -> O(1)
   }
 
-  public boolean remove(int value) {
-    LinkedList<Integer> bucket = buckets[hashIndex(value)];
-    boolean result = bucket.remove(Integer.valueOf(value));
+  public boolean remove(Object value) {
+    LinkedList<Object> bucket = buckets[hashIndex(value)];
+    boolean result = bucket.remove(value);
     if (result) {
       size--;
       return true;
@@ -63,7 +63,7 @@ public class MyHashSetV1 {
 
   @Override
   public String toString() {
-    return "MyHashSetV1{" +
+    return "MyHashSetV2{" +
         "buckets=" + Arrays.toString(buckets) +
         ", size=" + size +
         ", capacity=" + capacity +
