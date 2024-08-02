@@ -4,6 +4,7 @@ import static util.MyLogger.log;
 
 public class ThreadStateMain {
 
+  //main 스레드에서는 예외 던지기 가능
   public static void main(String[] args) throws InterruptedException {
     Thread thread = new Thread(new MyRunnable(), "myThread");
     log("myThread.state1 = " + thread.getState());
@@ -19,6 +20,7 @@ public class ThreadStateMain {
 
   static class MyRunnable implements Runnable {
 
+    //Runnable 부모 메서드에서 예외를 던지지 않기 때문에 예외 던지기 불가
     @Override
     public void run() {
       try {
