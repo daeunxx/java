@@ -1,6 +1,7 @@
 package thread.cas.spinlock;
 
 import static util.MyLogger.log;
+import static util.ThreadUtils.sleep;
 
 public class SpinLockMain {
 
@@ -15,6 +16,7 @@ public class SpinLockMain {
           spinLock.lock();
           //critical section
           log("비즈니스 로직 실행");
+          sleep(10); //오래 걸리는 로직에서 스핀 락 사용X
         } finally {
           spinLock.unlock();
         }
