@@ -11,11 +11,11 @@ public class ExecutorUtils {
     if (executorService instanceof ThreadPoolExecutor poolExecutor) {
       int poolSize = poolExecutor.getPoolSize();
       int activeCount = poolExecutor.getActiveCount();
-      int queueSize = poolExecutor.getQueue().size();
+      int queuedSize = poolExecutor.getQueue().size();
       long completedTaskCount = poolExecutor.getCompletedTaskCount();
 
       log("[poolSize=" + poolSize + ", activeCount=" + activeCount +
-          ", queueSize=" + queueSize + ", completedTaskCount" + completedTaskCount);
+          ", queuedSize=" + queuedSize + ", completedTaskCount=" + completedTaskCount + "]");
     } else {
       log(executorService);
     }
