@@ -37,6 +37,6 @@ public class PoolSizeMainV3 {
     printState(es);
 
     es.close();
-    log("== shutdown 완료");
+    log("== shutdown 완료 ==");
   }
 }

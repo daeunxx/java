@@ -23,7 +23,7 @@ public class PoolSizeMainV4 {
 
     long startTime = System.currentTimeMillis();
 
-    for (int i = 1; i <=TASK_SIZE; i++) {
+    for (int i = 1; i <= TASK_SIZE; i++) {
       String taskName = "task" + i;
       try {
         es.execute(new RunnableTask(taskName));

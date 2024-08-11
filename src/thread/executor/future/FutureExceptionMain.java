@@ -24,9 +24,9 @@ public class FutureExceptionMain {
     } catch (InterruptedException e) {
       throw new RuntimeException(e);
     } catch (ExecutionException e) {
-      log("e =" + e);
+      log("e=" + e);
       Throwable cause = e.getCause();
-      log("cause =" + cause);
+      log("cause=" + cause);
     }
 
     es.close();
