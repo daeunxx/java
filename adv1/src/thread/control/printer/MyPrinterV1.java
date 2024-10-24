@@ -16,7 +16,7 @@ public class MyPrinterV1 {
 
     Scanner userInput = new Scanner(System.in);
     while (true) {
-      log("프린터할 문서를 입력하세요. 종료(p): ");
+      log("프린터할 문서를 입력하세요. 종료(q): ");
       String input = userInput.nextLine();
 
       if (input.equals("q")) {
