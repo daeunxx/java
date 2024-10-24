@@ -3,7 +3,7 @@ package thread.executor;
 import static util.MyLogger.log;
 import static util.ThreadUtils.sleep;
 
-public class RunnableTask implements Runnable{
+public class RunnableTask implements Runnable {
 
   private final String name;
   private int sleepMs = 1000;

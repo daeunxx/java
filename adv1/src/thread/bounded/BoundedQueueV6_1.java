@@ -3,7 +3,7 @@ package thread.bounded;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
-public class BoundedQueueV6_1 implements BoundedQueue{
+public class BoundedQueueV6_1 implements BoundedQueue {
 
   private BlockingQueue<String> queue;
 

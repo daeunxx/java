@@ -5,7 +5,7 @@ import static util.MyLogger.log;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
-public class BoundedQueueV6_2 implements BoundedQueue{
+public class BoundedQueueV6_2 implements BoundedQueue {
 
   private BlockingQueue<String> queue;
 

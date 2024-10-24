@@ -9,7 +9,7 @@ public class InnerRunnableMainV4 {
 
     Thread thread = new Thread(() -> log("run()"));
     thread.start();
-    
+
     log("main() end");
   }
 }

@@ -17,7 +17,8 @@ public class PoolSizeMainV3 {
   public static void main(String[] args) {
     //ExecutorService es = Executors.newCachedThreadPool();
     //ExecutorService es = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60L, TimeUnit.MILLISECONDS, new SynchronousQueue<>());
-    ExecutorService es = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 3, TimeUnit.SECONDS, new SynchronousQueue<>());
+    ExecutorService es = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 3, TimeUnit.SECONDS,
+        new SynchronousQueue<>());
 
     log("pool 생성");
     printState(es);

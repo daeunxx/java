@@ -2,7 +2,7 @@ package thread.bounded;
 
 import static util.MyLogger.log;
 
-public class ConsumerTask implements Runnable{
+public class ConsumerTask implements Runnable {
 
   private BoundedQueue queue;
 

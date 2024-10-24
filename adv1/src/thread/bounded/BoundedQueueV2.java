@@ -6,7 +6,7 @@ import static util.ThreadUtils.sleep;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-public class BoundedQueueV2 implements BoundedQueue{
+public class BoundedQueueV2 implements BoundedQueue {
 
   private final Queue<String> queue = new ArrayDeque<>();
   private final int max;

@@ -18,7 +18,7 @@ public class InnerRunnableMainV2 {
 
     Thread thread = new Thread(runnable);
     thread.start();
-    
+
     log("main() end");
   }
 }

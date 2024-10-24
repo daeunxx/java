@@ -12,7 +12,7 @@ public class StartTest4Main {
     thread2.start();
   }
 
-  static class PrintWork implements Runnable{
+  static class PrintWork implements Runnable {
 
     private final String content;
     private final int sleepMs;

@@ -4,7 +4,7 @@ import static util.ThreadUtils.sleep;
 
 import java.util.Arrays;
 
-public class BasicList implements SimpleList{
+public class BasicList implements SimpleList {
 
   private static final int DEFAULT_CAPACITY = 5;
   private Object[] elements;

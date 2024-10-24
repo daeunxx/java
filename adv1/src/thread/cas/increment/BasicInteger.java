@@ -1,6 +1,6 @@
 package thread.cas.increment;
 
-public class BasicInteger implements IncrementInteger{
+public class BasicInteger implements IncrementInteger {
 
   private int value;
 

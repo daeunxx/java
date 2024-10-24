@@ -24,7 +24,7 @@ public class VolatileCountMain {
 
     @Override
     public void run() {
-      while(flag) {
+      while (flag) {
         count++;
         //1억번에 한번씩 출력
         if (count % 100_000_000 == 0) {

@@ -17,7 +17,7 @@ public class BankAccountV6 implements BankAccount {
   }
 
   @Override
-  public boolean withdraw(int amount){
+  public boolean withdraw(int amount) {
     log("거래 시작: " + getClass().getSimpleName());
 
     try {

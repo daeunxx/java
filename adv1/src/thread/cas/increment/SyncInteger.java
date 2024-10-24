@@ -1,6 +1,6 @@
 package thread.cas.increment;
 
-public class SyncInteger implements IncrementInteger{
+public class SyncInteger implements IncrementInteger {
 
   private volatile int value;
 

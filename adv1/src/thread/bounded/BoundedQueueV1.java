@@ -5,7 +5,7 @@ import static util.MyLogger.log;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-public class BoundedQueueV1 implements BoundedQueue{
+public class BoundedQueueV1 implements BoundedQueue {
 
   private final Queue<String> queue = new ArrayDeque<>();
   private final int max;

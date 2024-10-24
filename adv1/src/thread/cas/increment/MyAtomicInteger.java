@@ -2,7 +2,7 @@ package thread.cas.increment;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class MyAtomicInteger implements IncrementInteger{
+public class MyAtomicInteger implements IncrementInteger {
 
   AtomicInteger atomicInteger = new AtomicInteger(0);
 

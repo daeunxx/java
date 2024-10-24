@@ -14,7 +14,7 @@ public class InnerRunnableMainV1 {
     log("main() end");
   }
 
-  static class MyRunnable implements Runnable{
+  static class MyRunnable implements Runnable {
 
     @Override
     public void run() {

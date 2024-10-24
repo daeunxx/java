@@ -4,7 +4,7 @@ import static util.ThreadUtils.sleep;
 
 import java.util.Arrays;
 
-public class SyncList implements SimpleList{
+public class SyncList implements SimpleList {
 
   private static final int DEFAULT_CAPACITY = 5;
   private Object[] elements;

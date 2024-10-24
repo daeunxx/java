@@ -1,6 +1,6 @@
 package thread.start;
 
-public class HelloRunnable implements Runnable{
+public class HelloRunnable implements Runnable {
 
   @Override
   public void run() {

@@ -14,7 +14,7 @@ public class PoolSizeMainV2 {
 
   public static void main(String[] args) {
     ExecutorService es = Executors.newFixedThreadPool(2);
-   /* ExecutorService es = new ThreadPoolExecutor(2, 2, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>());*/
+    /* ExecutorService es = new ThreadPoolExecutor(2, 2, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>());*/
 
     log("pool 생성");
     printState(es);

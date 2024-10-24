@@ -12,7 +12,8 @@ import java.util.concurrent.TimeUnit;
 public class ExecutorBasicMain {
 
   public static void main(String[] args) {
-    ExecutorService es = new ThreadPoolExecutor(2, 2, 0, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>());
+    ExecutorService es = new ThreadPoolExecutor(2, 2, 0, TimeUnit.MILLISECONDS,
+        new LinkedBlockingQueue<>());
     log("== 초기 상태 ==");
     printState(es);
     es.execute(new RunnableTask("taskA"));

@@ -6,7 +6,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.TimeUnit;
 
-public class BoundedQueueV6_4 implements BoundedQueue{
+public class BoundedQueueV6_4 implements BoundedQueue {
 
   private BlockingQueue<String> queue;
 

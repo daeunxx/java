@@ -14,7 +14,7 @@ public class InnerRunnableMainV3 {
       }
     });
     thread.start();
-    
+
     log("main() end");
   }
 }

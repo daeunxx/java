@@ -8,7 +8,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class BoundedQueueV5 implements BoundedQueue{
+public class BoundedQueueV5 implements BoundedQueue {
 
   private final Lock lock = new ReentrantLock();
   private final Condition producerCond = lock.newCondition();

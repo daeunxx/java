@@ -1,6 +1,6 @@
 package thread.collection.simple.list;
 
-public class SyncProxyList implements SimpleList{
+public class SyncProxyList implements SimpleList {
 
   private SimpleList target;
 
