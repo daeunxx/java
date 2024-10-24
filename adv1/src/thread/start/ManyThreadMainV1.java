@@ -17,5 +17,7 @@ public class ManyThreadMainV1 {
 
     Thread thread3 = new Thread(runnable);
     thread3.start();
+
+    log("main() end");
   }
 }
