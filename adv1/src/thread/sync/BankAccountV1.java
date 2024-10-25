@@ -6,6 +6,7 @@ import static util.ThreadUtils.sleep;
 public class BankAccountV1 implements BankAccount {
 
   private int balance;
+  //private volatile int balance;
 
   public BankAccountV1(int initialBalance) {
     this.balance = initialBalance;
