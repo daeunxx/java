@@ -13,22 +13,14 @@ public class SimpleListMainV2 {
   private static void test(SimpleList list) throws InterruptedException {
     log(list.getClass().getSimpleName());
 
-    Runnable addA = new Runnable() {
-
-      @Override
-      public void run() {
-        list.add("A");
-        log("Thread-1: list.add(A)");
-      }
+    Runnable addA = () -> {
+      list.add("A");
+      log("Thread-1: list.add(A)");
     };
 
-    Runnable addB = new Runnable() {
-
-      @Override
-      public void run() {
-        list.add("B");
-        log("Thread-2: list.add(B)");
-      }
+    Runnable addB = () -> {
+      list.add("B");
+      log("Thread-2: list.add(B)");
     };
 
     Thread thread1 = new Thread(addA, "Thread-1");

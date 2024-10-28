@@ -17,13 +17,9 @@ public class IncrementThreadMain {
   }
 
   private static void test(IncrementInteger incrementInteger) throws InterruptedException {
-    Runnable runnable = new Runnable() {
-
-      @Override
-      public void run() {
-        sleep(10); //다른 스레드와의 동시 실행을 위해 잠깐 쉬었다가 실행
-        incrementInteger.increment();
-      }
+    Runnable runnable = () -> {
+      sleep(10); //다른 스레드와의 동시 실행을 위해 잠깐 쉬었다가 실행
+      incrementInteger.increment();
     };
 
     List<Thread> threads = new ArrayList<>();

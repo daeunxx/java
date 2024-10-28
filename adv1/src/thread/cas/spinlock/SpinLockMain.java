@@ -9,17 +9,14 @@ public class SpinLockMain {
     //SpinLockBad spinLock = new SpinLockBad();
     SpinLock spinLock = new SpinLock();
 
-    Runnable runnable = new Runnable() {
-      @Override
-      public void run() {
-        try {
-          spinLock.lock();
-          //critical section
-          log("비즈니스 로직 실행");
-          sleep(10); //오래 걸리는 로직에서 스핀 락 사용X
-        } finally {
-          spinLock.unlock();
-        }
+    Runnable runnable = () -> {
+      try {
+        spinLock.lock();
+        //critical section
+        log("비즈니스 로직 실행");
+        sleep(10); //오래 걸리는 로직에서 스핀 락 사용X
+      } finally {
+        spinLock.unlock();
       }
     };
 

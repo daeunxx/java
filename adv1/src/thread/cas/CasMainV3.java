@@ -14,12 +14,7 @@ public class CasMainV3 {
     AtomicInteger atomicInteger = new AtomicInteger();
     System.out.println("start value = " + atomicInteger.get());
 
-    Runnable runnable = new Runnable() {
-      @Override
-      public void run() {
-        incrementAndGet(atomicInteger);
-      }
-    };
+    Runnable runnable = () -> incrementAndGet(atomicInteger);
 
     List<Thread> threads = new ArrayList<>();
 
