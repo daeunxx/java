@@ -29,7 +29,7 @@ public class PoolSizeMainV3 {
       printState(es, taskName);
     }
 
-    sleep(1000);
+    sleep(2000);
     log("== 작업 수행 완료 ==");
     printState(es);
 
