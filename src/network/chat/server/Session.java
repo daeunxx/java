@@ -43,11 +43,10 @@ public class Session implements Runnable {
       while (true) {
         String received = inputStream.readUTF();
         log("client -> server: " + received);
-
         commandManager.execute(received, this);
       }
     } catch (IOException e) {
-      throw new RuntimeException(e);
+      log(e);
     } finally {
       sessionManager.remove(this);
       sessionManager.sendAll(this.username + " 님이 퇴장하셨습니다.");
@@ -66,6 +65,6 @@ public class Session implements Runnable {
     }
     closeAll(socket, inputStream, outputStream);
     closed = true;
-    log("연결 종료: " + socket + "isClosed: " + socket.isClosed());
+    log("연결 종료: " + socket + ", isClosed: " + socket.isClosed());
   }
 }

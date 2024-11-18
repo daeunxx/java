@@ -26,12 +26,14 @@ public class Server {
     addShutdownHoot(serverSocket, sessionManager);
 
     try {
-      Socket socket = serverSocket.accept();
-      log("소켓 연결: " + socket);
+      while (true) {
+        Socket socket = serverSocket.accept();
+        log("소켓 연결: " + socket);
 
-      Session session = new Session(sessionManager, socket);
-      Thread thread = new Thread(session, ("session" + ++sessionSize));
-      thread.start();
+        Session session = new Session(sessionManager, socket);
+        Thread thread = new Thread(session, ("session" + ++sessionSize));
+        thread.start();
+      }
     } catch (IOException e) {
       log("서버 소켓 종료: " + e);
     }

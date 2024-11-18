@@ -18,15 +18,15 @@ public class ReadHandler implements Runnable {
 
   @Override
   public void run() {
-    while (true) {
-      try {
+    try {
+      while (true) {
         String received = dataInputStream.readUTF();
-        System.out.println("출력: " + received);
-      } catch (IOException e) {
-        log(e);
-      } finally {
-        close();
+        log("Received: " + received);
       }
+    } catch (IOException e) {
+      log(e);
+    } finally {
+      client.close();
     }
   }
 
@@ -35,7 +35,6 @@ public class ReadHandler implements Runnable {
       return;
     }
     closed = true;
-    client.close();
     log("ReadHandler 종료");
   }
 }

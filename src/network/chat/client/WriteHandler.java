@@ -22,14 +22,9 @@ public class WriteHandler implements Runnable {
   @Override
   public void run() {
     Scanner scanner = new Scanner(System.in);
-    String username = "";
-
-    while (scanner.nextLine().isBlank()) {
-      System.out.print("회원 이름: ");
-      username = scanner.nextLine();
-    }
 
     try {
+      String username = inputUsername(scanner);
       dataOutputStream.writeUTF("/join" + DELIMITER + username);
 
       while (true) {
@@ -47,8 +42,17 @@ public class WriteHandler implements Runnable {
     } catch (IOException e) {
       throw new RuntimeException(e);
     } finally {
-      close();
+      client.close();
     }
+  }
+
+  private static String inputUsername(Scanner scanner) {
+    String username;
+    do {
+      System.out.print("회원 이름: ");
+      username = scanner.nextLine();
+    } while (username.isBlank());
+    return username;
   }
 
   public void close() {
@@ -61,7 +65,6 @@ public class WriteHandler implements Runnable {
       log(e);
     }
     closed = true;
-    client.close();
     log("WriteHandler 종료");
   }
 }
