@@ -3,7 +3,7 @@ package was.httpserver;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import was.httpserver.servlet.DefaultServlet;
+import was.v5.servlet.DefaultServlet;
 import was.httpserver.servlet.InternalErrorServlet;
 import was.httpserver.servlet.NotFoundServlet;
 

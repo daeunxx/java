@@ -1,4 +1,4 @@
-package was.httpserver.servlet;
+package was.v5.servlet;
 
 import java.io.IOException;
 import was.httpserver.HttpRequest;
