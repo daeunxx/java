@@ -5,9 +5,8 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.stream.Stream;
 
-public class RealTestFileV3 {
+public class RealTextFileV1 {
 
   private static final String PATH = "temp/hello2.txt";
 
@@ -21,9 +20,8 @@ public class RealTestFileV3 {
     // 파일에 쓰기
     Files.writeString(path, writeString, UTF_8);
 
+    String readString = Files.readString(path, UTF_8);
     System.out.println("== Read String ==");
-    Stream<String> lineStream = Files.lines(path, UTF_8);
-    lineStream.forEach(System.out::println);
-    lineStream.close();
+    System.out.println(readString);
   }
 }
