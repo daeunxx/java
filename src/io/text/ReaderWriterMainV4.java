@@ -27,7 +27,7 @@ public class ReaderWriterMainV4 {
     // 파일에서 읽기
     StringBuilder content = new StringBuilder();
     FileReader fr = new FileReader(FILE_NAME, UTF_8);
-    BufferedReader br = new BufferedReader(fr);
+    BufferedReader br = new BufferedReader(fr, BUFFER_SIZE);
 
     String line;
     while ((line = br.readLine()) != null) {
