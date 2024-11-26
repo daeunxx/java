@@ -18,7 +18,7 @@ public class SessionV5 implements Runnable {
   @Override
   public void run() {
 
-    try(socket;
+    try (socket;
         DataInputStream inputStream = new DataInputStream(socket.getInputStream());
         DataOutputStream outputStream = new DataOutputStream(socket.getOutputStream())) {
       while (true) {

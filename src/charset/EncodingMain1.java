@@ -30,6 +30,7 @@ public class EncodingMain1 {
 
   private static void encoding(String text, Charset charset) {
     byte[] bytes = text.getBytes(charset);
-    System.out.printf("%s -> [%s] 인코딩 -> %s %dbyte\n", text, charset, Arrays.toString(bytes), bytes.length);
+    System.out.printf("%s -> [%s] 인코딩 -> %s %dbyte\n", text, charset, Arrays.toString(bytes),
+        bytes.length);
   }
 }

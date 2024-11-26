@@ -10,6 +10,8 @@ import java.lang.annotation.Target;
 public @interface Range {
 
   int min();
+
   int max();
+
   String message() default "값은 지정된 범위 내에 있어야 합니다.";
 }

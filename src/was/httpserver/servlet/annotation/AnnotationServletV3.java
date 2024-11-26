@@ -50,6 +50,7 @@ public class AnnotationServletV3 implements HttpServlet {
   }
 
   private static class ControllerMethod {
+
     private final Object controller;
     private final Method method;
 

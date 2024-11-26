@@ -25,7 +25,7 @@ public class NewFilesMain {
     try {
       Files.createDirectory(directory);
       System.out.println("Directory created");
-    } catch(FileAlreadyExistsException e) {
+    } catch (FileAlreadyExistsException e) {
       System.out.println(directory + " Directory already exists");
     }
 

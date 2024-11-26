@@ -54,7 +54,8 @@ public class MemberConsoleMain {
     List<Member> members = memberRepository.findAll();
     System.out.println("회원 목록: ");
     for (Member member : members) {
-      System.out.printf("[ID: %s, Name: %s, Age: %d]\n", member.getId(), member.getName(), member.getAge());
+      System.out.printf("[ID: %s, Name: %s, Age: %d]\n", member.getId(), member.getName(),
+          member.getAge());
     }
   }
 }

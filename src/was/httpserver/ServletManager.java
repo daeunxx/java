@@ -37,7 +37,7 @@ public class ServletManager {
     } catch (PageNotFoundException e) {
       e.printStackTrace();
       notFoundServlet.service(request, response);
-    } catch(Exception e) {
+    } catch (Exception e) {
       e.printStackTrace();
       internalErrorServlet.service(request, response);
     }

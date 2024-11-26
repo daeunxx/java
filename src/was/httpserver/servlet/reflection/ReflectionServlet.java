@@ -37,7 +37,8 @@ public class ReflectionServlet implements HttpServlet {
     throw new PageNotFoundException("request = " + path);
   }
 
-  private static void invoke(Object controller, Method method, HttpRequest request, HttpResponse response) {
+  private static void invoke(Object controller, Method method, HttpRequest request,
+      HttpResponse response) {
     try {
       method.invoke(controller, request, response);
     } catch (IllegalAccessException | InvocationTargetException e) {

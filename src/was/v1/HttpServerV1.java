@@ -30,7 +30,8 @@ public class HttpServerV1 {
 
   private void process(Socket socket) throws IOException {
     try (socket;
-        BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream(), UTF_8));
+        BufferedReader reader = new BufferedReader(
+            new InputStreamReader(socket.getInputStream(), UTF_8));
         PrintWriter writer = new PrintWriter(socket.getOutputStream(), false, UTF_8)) {
 
       String requestString = requestToString(reader);

@@ -9,7 +9,7 @@ public class ReadHandler implements Runnable {
 
   private final DataInputStream dataInputStream;
   private final Client client;
-  private boolean closed =false;
+  private boolean closed = false;
 
   public ReadHandler(DataInputStream dataInputStream, Client client) {
     this.dataInputStream = dataInputStream;

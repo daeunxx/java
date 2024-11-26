@@ -8,7 +8,9 @@ import util.MyLogger;
 public @interface AnnotationElement {
 
   String value();
+
   int count() default 0;
+
   String[] tags() default {};
 
   // MyLogger myLogger 선언 불가

@@ -13,7 +13,8 @@ import network.chat.server.command.UsersCommand;
 
 public class CommandManager {
 
-  private static final String DELIMITER = "\\|";;
+  private static final String DELIMITER = "\\|";
+  ;
   private final SessionManager sessionManager;
   private final Map<String, Command> commands = new HashMap<>();
 

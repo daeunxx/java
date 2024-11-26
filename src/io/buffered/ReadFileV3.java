@@ -16,7 +16,7 @@ public class ReadFileV3 {
 
     int fileSize = 0;
     int data;
-    while ((data = bis.read()) != -1 ) {
+    while ((data = bis.read()) != -1) {
       fileSize++;
     }
     bis.close();

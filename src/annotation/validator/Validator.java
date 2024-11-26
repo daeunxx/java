@@ -22,7 +22,7 @@ public class Validator {
         int value = (int) field.get(object);
         Range annotation = field.getAnnotation(Range.class);
         if (value < annotation.min() || value > annotation.max()) {
-         throw new RuntimeException(annotation.message());
+          throw new RuntimeException(annotation.message());
         }
       }
     }

@@ -15,7 +15,7 @@ public class ReadFileV2 {
     byte[] buffer = new byte[BUFFER_SIZE];
     int fileSize = 0;
     int size;
-    while ((size = fis.read(buffer, 0, buffer.length)) != -1 ) {
+    while ((size = fis.read(buffer, 0, buffer.length)) != -1) {
       fileSize += size;
     }
     fis.close();

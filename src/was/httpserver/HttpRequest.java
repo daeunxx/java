@@ -44,6 +44,7 @@ public class HttpRequest {
       parseQueryParameters(pathParts[1]);
     }
   }
+
   private void parseQueryParameters(String queryString) {
     for (String param : queryString.split("&")) {
       String[] keyValue = param.split("=");
@@ -71,7 +72,8 @@ public class HttpRequest {
     int read = reader.read(bodyChars);
 
     if (read != contentLength) {
-      throw new IOException("Fail to read entire body. Expected " + contentLength + " bytes but read " + read);
+      throw new IOException(
+          "Fail to read entire body. Expected " + contentLength + " bytes but read " + read);
     }
 
     String body = new String(bodyChars);
@@ -89,7 +91,7 @@ public class HttpRequest {
     return method;
   }
 
-  public String getPath()  {
+  public String getPath() {
     return path;
   }
 

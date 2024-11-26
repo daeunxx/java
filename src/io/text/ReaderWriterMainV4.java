@@ -31,7 +31,7 @@ public class ReaderWriterMainV4 {
 
     String line;
     while ((line = br.readLine()) != null) {
-     content.append(line).append("\n");
+      content.append(line).append("\n");
     }
 
     System.out.println("== read String ==");

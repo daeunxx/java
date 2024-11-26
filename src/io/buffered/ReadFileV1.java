@@ -13,7 +13,7 @@ public class ReadFileV1 {
 
     int fileSize = 0;
     int data;
-    while ((data = fis.read()) != -1 ) {
+    while ((data = fis.read()) != -1) {
       fileSize++;
     }
     fis.close();

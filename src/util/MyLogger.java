@@ -5,7 +5,8 @@ import java.time.format.DateTimeFormatter;
 
 public class MyLogger {
 
-  private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+  private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern(
+      "yyyy-MM-dd HH:mm:ss");
 
   public static void log(Object object) {
     String time = LocalDateTime.now().format(formatter);

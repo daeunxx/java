@@ -25,7 +25,7 @@ public class SuppressWarningCase {
     List list = new ArrayList();
 
     // 제네릭 타입관 관련된 unchecked 경고
-    List<String> stringList = (List<String>)list;
+    List<String> stringList = (List<String>) list;
   }
 
   @SuppressWarnings("all")
@@ -33,6 +33,6 @@ public class SuppressWarningCase {
     Date date = new Date();
     date.getDate();
     List list = new ArrayList();
-    List<String> stringList = (List<String>)list;
+    List<String> stringList = (List<String>) list;
   }
 }
