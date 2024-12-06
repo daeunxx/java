@@ -124,22 +124,4 @@ public class HttpRequestHandlerV3 implements Runnable {
     writer.println("<h1>404 페이지를 찾을 수 없습니다.</h1>");
     writer.flush();
   }
-
-  private void responseToClient(PrintWriter writer) {
-    String body = "<h1>Hello World</h1>";
-    int length = body.getBytes(UTF_8).length;
-
-    StringBuilder sb = new StringBuilder();
-    sb.append("HTTP/1.1 200 OK\r\n");
-    sb.append("Content-Type: text/html\r\n");
-    sb.append("Content-Length: " + length + "\r\n");
-    sb.append("\r\n"); // Header 와 Body 구분 라인
-    sb.append(body);
-
-    log("HTTP 응답 정보 출력");
-    System.out.println(sb);
-
-    writer.println(sb);
-    writer.flush();
-  }
 }
